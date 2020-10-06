@@ -1,0 +1,30 @@
+/** You can add your scss files here **/
+
+@import "utilities/variables";
+@import "utilities/scaffoldings";
+@import "utilities/container";
+@import "utilities/displays";
+
+@import "atoms/buttons";
+@import "atoms/links";
+@import "atoms/inputs";
+@import "atoms/checkboxes";
+@import "atoms/selects";
+@import "atoms/typograpy";
+@import "atoms/images";
+@import "atoms/icons";
+@import "atoms/tags";
+
+@import "molecules/forms";
+@import "molecules/search";
+@import "molecules/lists/movie-item-horizontal";
+@import "molecules/lists/movie-item-vertical";
+@import "molecules/lists/movie-item-detail";
+
+@import "organisms/header";
+@import "organisms/footer";
+@import "organisms/breadcrumbs";
+@import "organisms/paginations";
+@import "organisms/carousels";
+
+@import "templates/sections";

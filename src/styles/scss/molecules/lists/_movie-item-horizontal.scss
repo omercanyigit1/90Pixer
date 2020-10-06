@@ -1,0 +1,39 @@
+.movie-item {
+  width: 100%;
+
+  .movie-item-image {
+
+    img {
+      border-radius: 15px;
+    }
+  }
+
+  .movie-average-item {
+
+    img {
+      margin-right: 15px;
+    }
+  }
+
+  .movie-item-content {
+
+    h3 {
+      margin-top: 5px;
+    }
+
+    div.ant-typography {
+      color: rgba($black, .5);
+    }
+  }
+}
+
+.movie-item-horizontal {
+  width: calc(100% - 30px);
+  background-color: #fafafa;
+  padding: 30px;
+
+  .movie-item-content {
+    padding-left: 30px;
+    padding-right: 0;
+  }
+}

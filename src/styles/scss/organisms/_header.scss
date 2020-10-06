@@ -1,0 +1,41 @@
+.ant-layout-header {
+  background-color: $white;
+  height: 85px;
+
+  .ant-menu-item {
+    background: $white !important;
+    color: $black;
+    font-weight: 500;
+
+    &:hover {
+      color: $primary;
+      background: #fff !important;
+    }
+  }
+}
+
+.ant-menu-dark .ant-menu-item > a {
+  color: $black;
+
+  &:hover {
+    color: $primary !important;
+  }
+}
+
+.header-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+
+  .logo-item {
+    height: 25px;
+    margin-right: 25px;
+  }
+
+  .header-el {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}

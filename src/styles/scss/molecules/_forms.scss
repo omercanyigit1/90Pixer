@@ -1,0 +1,18 @@
+.form-horizontal-item {
+  background-color: $white;
+  padding: 20px;
+  box-shadow: 0 16px 28px rgba($purple, 0.15);
+  border-radius: 10px;
+
+  .input-item {
+    margin-right: 10px;
+
+    button {
+      width: 100%;
+    }
+  }
+
+  .ant-form-item:nth-child(4) {
+    margin-right: 0;
+  }
+}

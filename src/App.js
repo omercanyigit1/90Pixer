@@ -1,26 +1,63 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter as Router, Switch, Route, useLocation} from "react-router-dom";
+import {Layout} from 'antd';
+
+//containers
+import HeaderItem from 'containers/Header';
+
+//views
+import Main from 'routers/Main'
+import Lists from 'routers/Lists'
+import Details from 'routers/Details'
+import Favorites from 'routers/Favorites'
+
+//Styles
+import 'antd/dist/antd.css';
+import 'styles/scss/main.scss';
+
+const { Header, Content } = Layout;
+
+function NoMatch() {
+    let location = useLocation();
+
+    return (
+        <div>
+            <h3>
+                No match for <code>{location.pathname}</code>
+            </h3>
+        </div>
+    );
+}
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Router>
+            <Layout>
+                <Header>
+                    <HeaderItem/>
+                </Header>
+                <Content>
+                    <Switch>
+                        <Route exact path="/">
+                            <Main/>
+                        </Route>
+                        <Route path="/lists">
+                            <Lists/>
+                        </Route>
+                        <Route path="/favorites">
+                            <Favorites/>
+                        </Route>
+                        <Route path="/movie/:id">
+                            <Details/>
+                        </Route>
+                        <Route path="*">
+                            <NoMatch/>
+                        </Route>
+                    </Switch>
+                </Content>
+            </Layout>
+        </Router>
+    );
 }
 
 export default App;

@@ -1,0 +1,16 @@
+.title-large {
+  font-size: 3.75rem !important;
+}
+
+@mixin text-color($color, $class) {
+
+  .text-#{$class} {
+    color: $color !important;
+  }
+}
+
+@include text-color($white, white);
+@include text-color($primary, primary);
+@include text-color($black, black);
+@include text-color($grey, grey);
+@include text-color($grey-2, grey-2);

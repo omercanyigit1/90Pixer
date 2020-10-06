@@ -1,0 +1,11 @@
+.section-breadcrumb-item {
+  height: 75px;
+
+  .container, .ant-breadcrumb {
+    height: 100%;
+  }
+
+  .ant-breadcrumb {
+    padding: 25px 0;
+  }
+}

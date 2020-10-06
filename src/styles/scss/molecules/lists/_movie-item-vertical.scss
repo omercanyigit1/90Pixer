@@ -1,0 +1,42 @@
+.movie-item-vertical {
+  width: calc(100% - 15px);
+
+  .movie-item-image {
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .movie-average-item {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  h3 {
+    margin-top: 5px;
+    margin-bottom: 10px !important;
+  }
+
+  .movie-buttons-item {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -50px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .movie-item-content {
+    position: relative;
+
+    .ant-btn {
+      color: $primary;
+      border-color: $primary;
+    }
+  }
+}

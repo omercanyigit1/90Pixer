@@ -1,0 +1,23 @@
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+  height: 3.25rem !important;
+  padding: 10px !important;
+  border-radius: 8px !important;
+  box-shadow: 0 7px 20px rgba(141, 40, 173, 0.15);
+  font-size: 1rem;
+  font-weight: 600;
+  text-shadow: none !important;
+
+  &:focus, &:hover, &:active {
+    background-color: $primary;
+    border-color: $primary;
+    opacity: .6;
+  }
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

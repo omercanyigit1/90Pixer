@@ -1,0 +1,35 @@
+
+$yellow: #F5C518;
+$purple: rgb(141, 40, 173);
+$grey: #F3F3F3;
+$grey-2: #636363;
+$black: #000;
+$white: #fff;
+
+$primary: $yellow;
+
+/*** Media queries breakpoints **/
+
+// Extra small screen / phone
+$screen-xs: 480px;
+$screen-xs-min: $screen-xs;
+
+// Small screen / tablet
+$screen-sm: 576px;
+$screen-sm-min: $screen-sm;
+
+// Medium screen / desktop
+$screen-md: 768px;
+$screen-md-min: $screen-md;
+
+// Large screen / wide desktop
+$screen-lg: 992px;
+$screen-lg-min: $screen-lg;
+
+// Extra large screen / full hd
+$screen-xl: 1200px;
+$screen-xl-min: $screen-xl;
+
+// Extra extra large screen / large desktop
+$screen-xxl: 1600px;
+$screen-xxl-min: $screen-xxl;

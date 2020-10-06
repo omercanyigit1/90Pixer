@@ -1,0 +1,31 @@
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin make-container($minWidth, $breakpoint) {
+
+  @media (min-width: $minWidth) {
+    .container {
+      max-width: $breakpoint;
+    }
+  }
+}
+
+@include make-container($screen-xs-min, $screen-xs);
+@include make-container($screen-sm-min, $screen-sm);
+@include make-container($screen-md-min, $screen-md);
+@include make-container($screen-lg-min, $screen-lg);
+//@include make-container($screen-xl-min, $screen-xl);
+@include make-container($screen-xxl-min, $screen-xxl);

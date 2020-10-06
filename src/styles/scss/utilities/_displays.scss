@@ -1,0 +1,36 @@
+@mixin displayType($property) {
+  .d-#{$property}-item {
+    display: $property;
+  }
+}
+
+@mixin flexProperty($propertyValue) {
+
+  .align-#{$propertyValue}-item {
+    align-items: $propertyValue;
+  }
+
+  .justify-#{$propertyValue}-item {
+    justify-content: $propertyValue;
+  }
+}
+
+@mixin flexDirectionProperty($propertyValue) {
+
+  .direction-#{$propertyValue}-item {
+    flex-direction: $propertyValue;
+  }
+}
+
+@include displayType(flex);
+@include displayType(block);
+@include displayType(inline-block);
+
+@include flexProperty(center);
+@include flexProperty(flex-start);
+@include flexProperty(flex-end);
+@include flexProperty(space-around);
+@include flexProperty(space-between);
+
+@include flexDirectionProperty(row);
+@include flexDirectionProperty(column);
